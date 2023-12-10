@@ -18,6 +18,7 @@ O diretório tem um conjunto de pastas que devem ser respeitadas para manter a o
 Outras pastas e ficheiros podem ser criados mas devem seguir as regras.
 - Os ficheiros devem ser colocados nas pastas adquadas
 - Os ficheiros de texto devem ser escritos em markdown. Deve ser seguida a [documentação do GitHub](https://docs.github.com/en/get-started/writing-on-github) sobre markdown como referência sobre a linguagem.
+  - Diagramas podem ser feitos utilizado a notação [Mermaid](https://mermaid.js.org/). On Github, na sua [documentação](https://docs.github.com/en/get-started/writing-on-github/working-with-advanced-formatting/creating-diagrams#creating-mermaid-diagrams), explica o suporte e utilização desta notação. 
 - Existem ficheiros de template dentro da pasta `/docs/Templates` que devem ser utilizados para fazer a documentação de certas páginas.
 - Ficheiros de anexo, e.g. imagens de mockups ou diagramas, devem ser colocados dentro de uma pasta `_assets` dentro da pasta de documentação a que se refere.  
   E.g. para se fazer o upload de um mock-up para a UI, o ficheiro deve ser colocado dentro da pasta `/docs/Implementação/Web UI/_assets`
