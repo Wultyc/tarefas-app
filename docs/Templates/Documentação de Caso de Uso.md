@@ -1,7 +1,7 @@
 # Store Financial Transaction
 Procedure to store financial transaction from UI into the database
 
-![[_assets/Process Diagram.svg]]
+![Exemplo do Processo de um caso de uso](_assets/Process Diagram.svg)
 
 |  #  |   System    |            Action             | Description                                         | Details                                                                       |
 |:---:|:-----------:|:-----------------------------:| --------------------------------------------------- | ----------------------------------------------------------------------------- |
