@@ -2,7 +2,29 @@
 Receive an financial transaction and saves it to the database.
 
 ## Sequence Diagram
-![[Sequence Diagram.svg]]
+```mermaid
+sequenceDiagram
+    actor User
+    participant rmq as RabbitMQ
+    participant finance-api as Finances API
+    participant pg as PostgreSQL
+
+    finance-api ->> rmq: Subscribe Topic
+    rmq -->> finance-api: Return message
+    finance-api -->> finance-api: Map CDM
+    finance-api ->>+ pg: Save Transaction to DB
+    pg -->>- finance-api: Return record ID 
+
+    User ->>+ finance-api: Request GET /api/records
+    finance-api ->>+ pg: Request records from DB
+    pg -->>- finance-api: Return records 
+    finance-api -->>- User: Return records
+
+    User ->>+ finance-api: Request POST /api/records
+    finance-api ->>+ pg: Save Transaction to DB
+    pg -->>- finance-api: Return record ID 
+    finance-api -->>- User: Return record saved message
+```
 
 
 > For maintenance purposes and REST endpoint was made available to insert records manually into the database
