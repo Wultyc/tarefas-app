@@ -71,3 +71,5 @@ Titulo da Tarefa no Quadro Kanban
 # Notas
 (Opcional) Notas que o *developer* queira deixar ao *reviwer*
 ```
+
+Exemplo de um Pull Request: https://github.com/Wultyc/tarefas-app/pull/1
