@@ -35,7 +35,7 @@ O utilizador faz um pedido HTTP `GET: /api/users` e recebe como resposta uma men
 ```
 
 ## Criação de utilizadores
-O utilizador pode criar novos utilizadores da aplicação
+O utilizador que seja administrador pode criar novos utilizadores da aplicação
 
 ```mermaid
 sequenceDiagram
