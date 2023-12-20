@@ -9,3 +9,17 @@ O projeto é definido por três componentes principais
 
 # Outras informações
 Para mais informações, deve-se consultar a pasta `docs` deste repositório.
+
+# Intrevenientes e seus papeis
+Para a realização deste projeto existem os seguintes intrevenientes
+- Mãe: *Stakeholder*
+    - Tem um problema e quer vê-lo resolvido
+    - É quem pediu o projeto e o esta a patrocinar
+- Jorge: *Developer Senior e Scrum Master*
+    - Responsável pelo desenho da solução
+    - Reve e valida a solução desenvolvida
+- Bruno: *Developer*
+    - Responsável pelo desenvolvimento e testes
+- Pai e Rosinha: *Utilizadores*
+    - Quem vai usar a aplicação
+    - Mãe Jorge e Bruno também serão utilizadores
