@@ -90,6 +90,18 @@ O utilizador faz um pedido HTTP `GET: /api/users/{user-id}`, no qual `{user-id}`
                 "id": "3264c45f-8a4f-40fd-9ba7-c8b6527e8003",
                 "descrição":"Limpar a cozinha"
             }
+        ],
+        "future": [
+            {
+                "id": "bc3a285d-e615-4763-bfe5-1a8c45742b11",
+                "descrição":"Levar o lixo"
+            }
+        ],
+        "delayed": [
+            {
+                "id": "61dc642e-e971-48fc-bae4-591ac53d2c38",
+                "descrição":"Tirar café"
+            }
         ]
     }
 }
