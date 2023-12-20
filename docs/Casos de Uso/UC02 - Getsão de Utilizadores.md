@@ -85,7 +85,7 @@ O utilizador faz um pedido HTTP `GET: /api/users/{user-id}`, no qual `{user-id}`
     "name": "Maria Amália",
     "privileges": "user",
     "tasks": {
-        "pendingToday": [
+        "today": [
             {
                 "id": "3264c45f-8a4f-40fd-9ba7-c8b6527e8003",
                 "descrição":"Limpar a cozinha"
