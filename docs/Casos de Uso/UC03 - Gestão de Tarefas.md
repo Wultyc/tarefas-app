@@ -1,7 +1,7 @@
 # Getsão de Tarefas
 A gestão de tarefas serve para que se possam manipular as tarefas da aplicação sem necessidade de interagir com a base de dados. Este caso de uso divide-se nos casos de uso a baixo
 
-## Listagem das
+## Listagem das tarefas na aplicação
 O utilizador pode listar as tarefas da aplicação
 
 ```mermaid
