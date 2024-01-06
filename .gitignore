@@ -6,8 +6,7 @@
 *.log
 
 # Java Target folder
-
-**/target
+target
 
 # Package Files #
 *.jar
@@ -23,13 +22,13 @@ hs_err_pid*
 replay_pid*
 
 ### react ###
-**/.DS_*
-**/logs
-**/*.backup.*
-**/*.back.*
+.DS_*
+logs
+*.backup.*
+*.back.*
 
-**/node_modules
-**/bower_components
+node_modules
+bower_components
 
 *.sublime*
 
