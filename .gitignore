@@ -36,3 +36,6 @@ replay_pid*
 *.psd
 *.thumb
 *.sketch
+
+### Misc ###
+*.env
