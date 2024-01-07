@@ -8,6 +8,7 @@ import java.util.List;
 import java.util.Objects;
 import java.util.Optional;
 import java.util.stream.Collectors;
+import java.util.stream.Stream;
 
 @Service
 public class UserService {
@@ -18,12 +19,9 @@ public class UserService {
         this.jpaStreamer = jpaStreamer;
     }
 
-    public List<User> getUsers(){
-        List<User> allUsers = jpaStreamer.stream(User.class)
-                .sorted(User$.id)
-                .collect(Collectors.toList());
-
-        return allUsers;
+    public Stream<User> getUsers(){
+        return jpaStreamer.stream(User.class)
+                .sorted(User$.id);
     }
 
     public Optional<User> getUserById(int userId){

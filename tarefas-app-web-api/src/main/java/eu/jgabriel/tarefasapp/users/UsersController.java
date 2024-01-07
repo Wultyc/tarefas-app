@@ -10,6 +10,7 @@ import org.springframework.web.server.ResponseStatusException;
 
 import java.util.List;
 import java.util.Optional;
+import java.util.stream.Collectors;
 
 @RestController
 @RequestMapping("/api/users")
@@ -24,7 +25,8 @@ public class UsersController {
 
     @GetMapping()
     public List<User> getUsers(){
-        return userService.getUsers();
+        return userService.getUsers()
+                .collect(Collectors.toList());
     }
 
     /*@GetMapping()
