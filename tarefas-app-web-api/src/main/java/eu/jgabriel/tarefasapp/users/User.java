@@ -1,5 +1,6 @@
 package eu.jgabriel.tarefasapp.users;
 
+import eu.jgabriel.tarefasapp.roles.Role;
 import jakarta.persistence.*;
 
 import java.util.Objects;
@@ -18,9 +19,9 @@ public class User {
     @Basic
     @Column(name = "profile_picture")
     private String profilePicture;
-    @Basic
-    @Column(name = "role")
-    private int role;
+    @ManyToOne
+    @JoinColumn(name = "role")
+    private Role role;
 
     public int getId() {
         return id;
@@ -46,11 +47,11 @@ public class User {
         this.profilePicture = profilePicture;
     }
 
-    public int getRole() {
+    public Role getRole() {
         return role;
     }
 
-    public void setRole(int role) {
+    public void setRole(Role role) {
         this.role = role;
     }
 
