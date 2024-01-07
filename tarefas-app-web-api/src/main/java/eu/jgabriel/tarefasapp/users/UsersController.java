@@ -2,13 +2,12 @@ package eu.jgabriel.tarefasapp.users;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 import org.springframework.web.server.ResponseStatusException;
 
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 import java.util.Optional;
 import java.util.stream.Collectors;
 
@@ -29,10 +28,15 @@ public class UsersController {
                 .collect(Collectors.toList());
     }
 
-    /*@GetMapping()
-    public List<User> createUsers(){
-        return userService.getUsers();
-    }*/
+    @PostMapping()
+    public Map<String,String> createUsers(@RequestBody Object newUser){
+        System.out.println(newUser);
+
+        Map<String, String> result = new HashMap<String, String>();
+        result.put("result", "success");
+
+        return result;
+    }
 
     @GetMapping("/{userId}")
     public User getUserById(@PathVariable int userId){
